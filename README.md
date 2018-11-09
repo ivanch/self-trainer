@@ -12,12 +12,12 @@ Details:
 
 ## Usage
 If you want to use, be sure to install Jupyter Notebook on your computer. The code could be written in a `.py` file, but we need to check the outputs of the some pieces of code and have the control over the models.
-0. Make sure you have `keras`, `sklearn`, `numpy`, `cv2` and `matplotlib` installed.
-1. Extract `dataset.zip` into the folder.
-2. Make a folder called `Samples`.
-3. Run jupyter notebook on the directory and open `SelfTrainer.ipynb` file.
-4. Configure the code, if there's something that might need a little tweaking.
-5. Run the code cells and check their output as needed.
+1. Make sure you have `keras`, `sklearn`, `numpy`, `cv2` and `matplotlib` installed.
+2. Extract `dataset.zip` into the folder.
+3. Make a folder called `Samples`.
+4. Run jupyter notebook on the directory and open `SelfTrainer.ipynb` file.
+5. Configure the code, if there's something that might need a little tweaking.
+6. Run the code cells and check their output as needed.
 
 ## NOTES
 * This project is more "data modification" than "data augmentation".
