@@ -2,10 +2,10 @@
 #### An A.I. used to train another A.I. so the second A.I. can get more powerful
 
 ## How does it work
-Basically, you train the GAN with a dataset, than use the trained GAN to generate a dataset to feed to the CNN. In general, it works just like a normal data augmentation, where you create data that doesn't necessarily exists.
+Basically, you train the GAN with a dataset, then use the trained GAN to generate a dataset to feed to the CNN. In general, it works just like a normal data augmentation, where you create data that doesn't necessarily exist.
 
 ## Tests
-In what I've tested (fashion MNIST), this dataset performed ~2% better on F1 score than only training with the dataset. My tests also appointed that it doesn't work with some datasets (like MNIST). The tests were made with 200 epochs and with dataset set to 2,000.
+Based on what I've tested (fashion MNIST), this method performed ~2% better on F1 score than only training with the normal dataset. My tests also appointed that it doesn't work with some datasets (like MNIST). The tests were made with 200 epochs and with dataset set to 2,000.
 Details:
 * 200 Epochs on normal dataset: 0.8122 F1 score.
 * 200 Epochs on generated dataset: 0.8305 F1 score.
