@@ -1,3 +1,4 @@
+
 # Data Augmentation with GAN
 #### An A.I. used to train another A.I. so the second A.I. can get more powerful
 
@@ -21,9 +22,12 @@ If you want to use, be sure to install Jupyter Notebook on your computer. The co
 
 ## Could it help fixing an unbalanced dataset?
 Yes it can. If you've got a very unbalanced dataset, you can use a GAN to help you balance the classes. The results showed an improvement of ~4% on F1 score.
-1. Unbalanced dataset: [134, 59, 18, 479, 31, 526, 510, 125, 33, 81] (samples per class)
-  1.1. F1 score: 74.59% (dataset only)
-  1.2. F1 score: 78.73% (with augmented data from GAN)
+Unbalanced dataset: [134, 59, 18, 479, 31, 526, 510, 125, 33, 81] (samples per class)
+
+| Type | F1 score |
+|--|--|
+| Dataset only | 74.59% |
+| With augmented data from GAN | 78.73% |
 
 
 ## NOTES
