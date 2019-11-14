@@ -3,10 +3,11 @@
 #### An A.I. used to train another A.I. so the second A.I. can get more powerful
 
 ## How does it work
-Basically, you train the GAN with a dataset, then use the trained GAN to generate a dataset to feed to the CNN. In general, it works just like a normal data augmentation, where you create data that doesn't necessarily exist.
+Basically, you train a GAN with a dataset, then use the trained GAN to generate another dataset that will feed the CNN. In general it works just like a normal data augmentation, where you create data that doesn't necessarily exist.
 
 ## Tests
-Based on what I've tested (fashion MNIST), this method performed ~2% better on F1 score than only training with the normal dataset. My tests also appointed that it doesn't work with some datasets (like MNIST). The tests were made with 200 epochs and with dataset set to 2,000.
+Based on the tests made with data from Fashion MNIST, this method performed ~2% better on F1 score than only training with the normal dataset. Tests also appointed that it doesn't work with some datasets (like normal MNIST).
+Tests were made with 200 epochs and with dataset set to 2,000.
 Details:
 * 200 Epochs on normal dataset: 0.8122 F1 score.
 * 200 Epochs on generated dataset: 0.8305 F1 score.
@@ -21,8 +22,12 @@ If you want to use, be sure to install Jupyter Notebook on your computer. The co
 6. Run the code cells and check their output as needed.
 
 ## Could it help fixing an unbalanced dataset?
-Yes it can. If you've got a very unbalanced dataset, you can use a GAN to help you balance the classes. The results showed an improvement of ~4% on F1 score.
-Unbalanced dataset: [134, 59, 18, 479, 31, 526, 510, 125, 33, 81] (samples per class)
+Yes.
+If you've got an unbalanced dataset, you can use a GAN to help you balance the classes. The results showed an improvement of ~4% on F1 score.
+
+#### Example
+Samples per class: 134, 59, 18, 479, 31, 526, 510, 125, 33, 81
+Total samples: 1996
 
 | Type | F1 score |
 |--|--|
