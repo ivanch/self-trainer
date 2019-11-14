@@ -35,8 +35,8 @@ Total samples: 1996
 | With augmented data from GAN | 78.73% |
 
 
-## NOTES
-* This method works better with limited data, in all cases presented here I used 2,000.
-* This method doesn't work with all datasets, MNIST as an example.
+## Notes
+* This method works better with limited data. In here it was used 2,000 images.
+* This method doesn't work with all datasets, normal MNIST as an example.
 * If you want to test, be sure to test both GAN and GAN + DATASET options, performances may vary.
 * When training the GAN, samples of the outputs will go into the `Samples` folder, this way you can check the GAN performance.
